@@ -1,0 +1,17 @@
+{
+  "name": "student-management-system-e2e",
+  "private": true,
+  "version": "1.0.0",
+  "description": "QA automation for Student Management System",
+  "scripts": {
+    "test:e2e": "cucumber-js tests/features --config cucumber.js",
+    "test:pw": "playwright test",
+    "report:pw": "playwright show-report test-results/playwright-html-report"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.0",
+    "@playwright/test": "^1.55.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
